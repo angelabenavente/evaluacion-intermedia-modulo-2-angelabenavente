@@ -1,5 +1,9 @@
 .wrapper {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
 .main {
@@ -25,21 +29,31 @@
   width: 90px;
   background-color: #60d8c4;
   color: white;
+  font-weight: 700;
   border: none;
   border-radius: 6px;
   text-transform: capitalize;
   cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 
 .clueDiv {
   border: 2px solid lightslategray;
   padding: 5px;
-  max-width: 500px;
+  max-width: 300px;
   margin-bottom: 10px;
+}
+
+.clue {
+  display: inline-block;
+}
+
+.clueText {
+  display: inline-block;
 }
 
 .attempsDiv {
   border: 2px solid lightslategray;
   padding: 5px;
-  max-width: 500px;
+  max-width: 300px;
 }

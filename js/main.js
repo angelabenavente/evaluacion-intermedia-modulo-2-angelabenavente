@@ -3,6 +3,7 @@
 const numberChoosenNode = document.querySelector('.number');
 const submitButtonNode = document.querySelector('.submitButton');
 const clueTextNode = document.querySelector('.clueDiv > .clueText');
+const clueDivNode = document.querySelector('.clueDiv > .clue');
 const attempsTextNode = document.querySelector('.attempsDiv > .attemps > .attempsNumber');
 const maxNumber = 100;
 const minNumber = 0;
@@ -21,7 +22,8 @@ function increaseCountClicks() {
 
 function getClue() {
   if (numberChoosenNode.value == '' || numberChoosenNode.value > maxNumber || numberChoosenNode.value <= minNumber || isNaN(numberChoosenNode.value) === false) {
-    clueTextNode.innerHTML = 'Debe introducir un número entre 1 y 100.';
+    clueTextNode.innerHTML = 'Debes introducir un número entre 1 y 100.';
+    clueDivNode.innerHTML = '';
     //isNaN validation because I can write 'e' letter in spite of type number input.
   } else if (randomNumber > numberChoosenNode.value) {
     clueTextNode.innerHTML = 'Demadiado bajo.';

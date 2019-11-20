@@ -26,10 +26,11 @@
   margin-top: 15px;
   margin-bottom: 15px;
   width: 250px;
+  align-self: center;
 }
 
 .submitButton {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 5px;
   width: 90px;
   background-color: #60d8c4;
@@ -40,13 +41,18 @@
   text-transform: capitalize;
   cursor: pointer;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.42);
+  align-self: center;
+  text-shadow: 1px 1px #423d3dc2;
+  
 }
-
 .clueDiv {
   border: 2px solid lightslategray;
   padding: 5px;
-  max-width: 300px;
+  max-width: 320px;
   margin-bottom: 10px;
+  border: 2px solid;
+  border-image-source: linear-gradient(45deg,rgb(71, 152, 137), rgb(205, 216, 207));
+  border-image-slice: 1;
 }
 
 .clue {
@@ -61,4 +67,6 @@
   border: 2px solid lightslategray;
   padding: 5px;
   max-width: 300px;
+  border-image-source: linear-gradient(45deg,rgb(71, 152, 137), rgb(205, 216, 207));
+  border-image-slice: 1;
 }

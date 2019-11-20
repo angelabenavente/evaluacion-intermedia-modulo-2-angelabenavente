@@ -1,0 +1,45 @@
+.wrapper {
+  padding: 20px;
+}
+
+.main {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.number {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+
+.submitButton {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 90px;
+  background-color: #60d8c4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.clueDiv {
+  border: 2px solid lightslategray;
+  padding: 5px;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.attempsDiv {
+  border: 2px solid lightslategray;
+  padding: 5px;
+  max-width: 500px;
+}

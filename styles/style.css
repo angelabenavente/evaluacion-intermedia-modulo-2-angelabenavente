@@ -43,6 +43,7 @@
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.42);
   align-self: center;
   text-shadow: 1px 1px #423d3dc2;
+  outline: none;
   
 }
 .clueDiv {

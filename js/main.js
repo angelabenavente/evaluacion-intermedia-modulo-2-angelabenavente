@@ -2,6 +2,7 @@
 
 const numberChoosenNode = document.querySelector('.number');
 const submitButtonNode = document.querySelector('.submitButton');
+const clueHiddenNode = document.querySelector('.clueHidden');
 const clueTextNode = document.querySelector('.clueDiv > .clueText');
 const clueDivNode = document.querySelector('.clueDiv > .clue');
 const attempsTextNode = document.querySelector('.attempsDiv > .attemps > .attempsNumber');
@@ -21,18 +22,22 @@ function increaseCountClicks() {
 }
 
 function getClue() {
-  if (numberChoosenNode.value == '' || numberChoosenNode.value > maxNumber || numberChoosenNode.value <= minNumber || isNaN(numberChoosenNode.value) === false) {
+  const number = parseInt(numberChoosenNode.value);
+
+  if (number > maxNumber || number <= minNumber || isNaN(number)) {
     clueTextNode.innerHTML = 'Debes introducir un número entre 1 y 100.';
-    clueDivNode.innerHTML = '';
+    clueHiddenNode.innerHTML = '';
     //isNaN validation because I can write 'e' letter in spite of type number input.
-  } else if (randomNumber > numberChoosenNode.value) {
+  } else if (randomNumber > number) {
     clueTextNode.innerHTML = 'Demadiado bajo.';
-  } else if (randomNumber < numberChoosenNode.value) {
+  } else if (randomNumber < number) {
     clueTextNode.innerHTML = 'Demadiado alto.';
   } else {
     clueTextNode.innerHTML = '¡¡¡Has ganado, campeona!!!.';
+    clueHiddenNode.innerHTML = '';
+    submitButtonNode.disabled = true;
   }
-  increaseCountClicks()
+  increaseCountClicks();
 }
 function playGame(){
   getClue();

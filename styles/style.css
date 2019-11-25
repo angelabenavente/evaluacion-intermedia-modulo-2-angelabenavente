@@ -44,7 +44,9 @@
   align-self: center;
   text-shadow: 1px 1px #423d3dc2;
   outline: none;
-  
+}
+.submitButton:disabled {
+  background-color: grey;
 }
 .clueDiv {
   border: 2px solid lightslategray;

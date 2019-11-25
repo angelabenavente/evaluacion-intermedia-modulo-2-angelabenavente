@@ -37,7 +37,7 @@ function getClue() {
     clueTextNode.innerHTML = '¡¡¡Has ganado, campeona!!!.';
     clueHiddenNode.innerHTML = '';
     submitButtonNode.disabled = true;
-    playAgainNode.innerHTML = 'Refresca la página para jugar otra vez';
+    playAgainNode.innerHTML = 'Refresca la página para jugar otra vez.';
   }
   increaseCountClicks();
 }

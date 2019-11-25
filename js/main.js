@@ -38,6 +38,7 @@ function getClue() {
     clueHiddenNode.innerHTML = '';
     submitButtonNode.disabled = true;
     playAgainNode.innerHTML = 'Refresca la página para jugar otra vez.';
+    submitButtonNode.disabled = true;
   }
   increaseCountClicks();
 }

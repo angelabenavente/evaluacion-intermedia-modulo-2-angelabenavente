@@ -30,7 +30,7 @@
 }
 
 .submitButton {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   padding: 5px;
   width: 90px;
   background-color: #60d8c4;
@@ -47,6 +47,12 @@
 }
 .submitButton:disabled {
   background-color: grey;
+}
+
+.playAgain {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
 }
 .clueDiv {
   border: 2px solid lightslategray;

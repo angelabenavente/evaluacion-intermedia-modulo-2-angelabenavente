@@ -6,6 +6,7 @@ const clueHiddenNode = document.querySelector('.clueHidden');
 const clueTextNode = document.querySelector('.clueDiv > .clueText');
 const clueDivNode = document.querySelector('.clueDiv > .clue');
 const attempsTextNode = document.querySelector('.attempsDiv > .attemps > .attempsNumber');
+const playAgainNode = document.querySelector('.playAgain');
 const maxNumber = 100;
 const minNumber = 0;
 let tryCounter = 0;
@@ -36,6 +37,7 @@ function getClue() {
     clueTextNode.innerHTML = '¡¡¡Has ganado, campeona!!!.';
     clueHiddenNode.innerHTML = '';
     submitButtonNode.disabled = true;
+    playAgainNode.innerHTML = 'Refresca la página para jugar otra vez';
   }
   increaseCountClicks();
 }
